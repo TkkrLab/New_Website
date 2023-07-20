@@ -1,0 +1,13 @@
+# Contact us on 
+Contact: mailto:bestuur@tkkrlab.nl
+Contact: tel:+31 (0)53-2030532
+
+# Or if its urgent
+Contact: mailto:dave@tkkrlab.nl
+Contact: tel:+31 (0)6-32145759
+
+#If its a nice hack
+Reward : bottle of Club-Mate (pick it up at TkkrLab)
+
+# we understand :
+Preferred-Languages: nl, en

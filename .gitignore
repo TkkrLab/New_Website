@@ -1,0 +1,8 @@
+public
+content/projects/git-*
+content/agenda.md
+static/initial_status.js
+.vscode/settings.json
+.hugo_build.lock
+.DS_Store
+*.code-workspace
