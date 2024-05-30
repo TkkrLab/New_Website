@@ -8,7 +8,7 @@ type: docs
 ## Apparatuur
 
 * Camera Sony ZV-1 met statief
-* [Behringer XENYX X1222USB mengpaneel](​​https://www.bax-shop.nl/analoog-mengpaneel/behringer-xenyx-x1222usb-pa-en-studio-mixer) met USB aansluiting
+* [Behringer XENYX X1222USB mengpaneel](https://www.bax-shop.nl/analoog-mengpaneel/behringer-xenyx-x1222usb-pa-en-studio-mixer) met USB aansluiting
 * Wireless headset microfoon
 * Wireless mic 2x
 * 2 HDMI capture USB stick
