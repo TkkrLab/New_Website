@@ -15,6 +15,20 @@ title: Tkkrlab
 <p class="lead mt-5">Hackerspace Enschede</p>
 {{< /blocks/cover >}}
 
+{{% blocks/section type="row" %}}
+
+{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
+Get the Goldydocs app!
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
+    url="https://github.com/google/docsy-example" %}}
+We do a [Pull Request](https://github.com/google/docsy-example/pulls)
+contributions workflow on **GitHub**. New users are always welcome!
+{{% /blocks/feature %}}
+
+{{% /blocks/section %}}
+
 
 {{% blocks/lead color="#ffffff" %}}
 Goldydocs provides a single web UI providing visibility into porridge
