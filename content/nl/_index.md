@@ -16,7 +16,7 @@ title: Tkkrlab
 {{< /blocks/cover >}}
 
 
-{{% blocks/lead color="primary" %}}
+{{% blocks/lead color="#ffffff" %}}
 Goldydocs provides a single web UI providing visibility into porridge
 temperature, chair size, and bed softness metrics! You can even find out who's
 been eating **your** porridge.
