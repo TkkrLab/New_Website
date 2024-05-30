@@ -2,7 +2,7 @@
 title: Tkkrlab
 ---
 
-{{< blocks/cover title="Welcome bij Tkkrlab!" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Welkom bij TkkrLab!" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/gereedschap/">
   Gereedschap <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
@@ -12,8 +12,7 @@ title: Tkkrlab
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/Events/">
   Events <i class="fas fa-arrow-alt-circle-right ms-2 "></i>
 </a>
-<p class="lead mt-5">Create, inovate &mdash; Togheter</p>
-{{< blocks/link-down color="info" >}}
+<p class="lead mt-5">Hackerspace Enschede</p>
 {{< /blocks/cover >}}
 
 
