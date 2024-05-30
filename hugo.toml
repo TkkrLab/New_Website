@@ -1,9 +1,9 @@
-baseURL = "/"
-title = "Tkkrlab"
+baseURL = "https://example.docsy.dev/"
+title = "Goldydocs"
 
 # Language settings
-contentDir = "content/nl"
-defaultContentLanguage = "nl"
+contentDir = "content/en"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
@@ -51,33 +51,34 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-[services]
-[services.googleAnalytics]
-# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
-
 # Language configuration
 
-# english has been removed for now un-comment to add english again
-#[languages]
-#[languages.en]
-#languageName ="English"
-#contentDir = "content/en"
-  # Weight used for sorting.
-#weight = 1
-#[languages.en.params]
-#title = "Tkkrlab"
-#description = "Create, inovate"
+[languages]
+[languages.en]
+languageName ="English"
+# Weight used for sorting.
+weight = 1
+[languages.en.params]
+title = "Goldydocs"
+description = "A Docsy example site"
 
-[languages.nl]
-languageName ="Dutch/Nederlands"
-contentDir = "content/nl"
-[languages.nl.params]
-title = "Tkkrlab"
-description = "Create, inovate"
+[languages.no]
+languageName ="Norsk"
+contentDir = "content/no"
+[languages.no.params]
+title = "Goldydocs"
+description = "Docsy er operativsystem for skyen"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
+[languages.fa]
+languageName ="فارسی"
+contentDir = "content/fa"
+[languages.fa.params]
+title = "اسناد گلدی"
+description = "یک نمونه برای پوسته داکسی"
+time_format_default = "2006.01.02"
+time_format_blog = "2006.01.02"
 
 [markup]
   [markup.goldmark]
@@ -98,7 +99,6 @@ time_format_blog = "02.01.2006"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
@@ -137,27 +137,26 @@ github_branch= "main"
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "d72aa9b2712488cc3"
 
-# Enable Algolia DocSearch
-algolia_docsearch = false
-
 # Enable Lunr.js offline search
 offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+[params.copyright]
+  authors = "Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | "
+  from_year = 2018
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
-# Set to true to disable the About link in the site footer
-footer_about_disable = false
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = true
+sidebar_menu_compact = false
 # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
 sidebar_search_disable = false
 
@@ -214,14 +213,11 @@ enable = false
 # hugo module configuration
 
 [module]
-  # uncomment line below for temporary local development of module
-  # replacements = "github.com/google/docsy -> ../../docsy"
+  # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
+  # workspace = "docsy.work"
   [module.hugoVersion]
     extended = true
     min = "0.110.0"
   [[module.imports]]
     path = "github.com/google/docsy"
-    disable = false
-  [[module.imports]]
-    path = "github.com/google/docsy/dependencies"
     disable = false
