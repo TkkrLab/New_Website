@@ -1,0 +1,45 @@
+name: Build+deploy website
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - '.gitignore'
+      - '.travis.yml'
+      - 'README.md'
+      - '*.sh'
+      - '*.json'
+
+  pull_request:
+    branches: [master]
+    types: [merged]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment: 'TkkrLab website'
+    steps:
+      - name: Git Checkout (with submodules)
+        uses: actions/checkout@v4.1.3
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.124.1'
+          extended: true
+
+      - name: Build
+        run: bash build.sh
+
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzvc -i --delete"
+          SOURCE: './public/'
+          REMOTE_HOST: ${{ vars.HOST }}
+          REMOTE_USER: ${{ vars.SSH_USER }}
+          REMOTE_PORT: ${{ vars.SSH_PORT }}
+          TARGET: ${{ vars.WEBROOT }}
